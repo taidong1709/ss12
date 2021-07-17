@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./app.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>Cloud Cafe</h1>
+    <div class="content">
+        <form action="#" id="add-coffee-form">
+            <input type="text" placeholder="Coffee name" name="cfname">
+            <input type="text" placeholder="Coffee city" name="cfcity">
+            <input type="submit" value="Add coffee">
+        </form>
+
+        <ul id="coffee-list">
+
+        </ul>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyBygWGS6bv-366t3L5EL94g6CBlSD-U0WA",
+            authDomain: "vtdfirebase.firebaseapp.com",
+            projectId: "vtdfirebase",
+            storageBucket: "vtdfirebase.appspot.com",
+            messagingSenderId: "132909306635",
+            appId: "1:132909306635:web:067975586f3d64a056880e",
+            measurementId: "G-ETZV5Z4XVJ"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+
+        const db = firebase.firestore();
+    </script>
+</body>
+
+</html>
